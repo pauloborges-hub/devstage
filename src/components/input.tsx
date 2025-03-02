@@ -4,7 +4,7 @@ interface InputRootProps extends ComponentProps<'div'> {
   error?: boolean
 }
 
-export default function InputRoot({ error = false, ...props }: InputRootProps) {
+export function InputRoot({ error = false, ...props }: InputRootProps) {
   return (
     <div
       data-error={error}
