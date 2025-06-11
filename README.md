@@ -1,34 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 NLW Node.js API
 
-## Getting Started
+This project is a backend API built with **Fastify** and **TypeScript**, using modern tooling and a clean architecture. It implements a referral system with ranking and user statistics features.
 
-First, run the development server:
+---
+
+## 📦 Tech Stack
+
+### Core
+
+- **Fastify**: High-performance web framework for Node.js
+- **Zod**: Type-safe schema validation
+- **Drizzle ORM**: TypeScript-first SQL ORM
+- **Postgres**: SQL database
+- **ioredis**: Redis client for caching and messaging
+
+### Documentation
+
+- **@fastify/swagger** + **swagger-ui**: API documentation generation and UI
+- **@fastify/cors**: CORS middleware
+
+---
+
+## 🧰 Dev Tooling
+
+- **TypeScript**: Static type-checking
+- **Tsup**: Bundler for building Node.js apps
+- **TSX**: Fast TypeScript execution and file watching
+- **Drizzle Kit**: SQL migrations and schema management
+- **Biome**: Code formatting and linting
+
+---
+
+## 📂 Scripts
+
+- `dev`: Run the development server with live reload (`tsx watch`)
+- `build`: Compile the project using `tsup`
+
+---
+
+## 📁 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+nlw-nodejs/
+├── src/
+│   └── server.ts     # Main entry point of the server
+├── .env              # Environment configuration
+├── package.json      # Project manifest
+├── tsconfig.json     # TypeScript configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📌 Setup & Running
 
-## Learn More
+```bash
+# Install dependencies
+npm install
 
-To learn more about Next.js, take a look at the following resources:
+# Start the development server
+npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Build the project
+npm run build
+```
